@@ -8,27 +8,36 @@ const MainNav = styled.nav`
     display: flex;
 
     li {
-        margin-left: 10px;
-        a {
-            text-decoration: none;
-            color: #fff;
-            &:hover {
-                border-bottom: 3px solid red;
-            }
+      margin-left: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          border-bottom: 3px solid red;
         }
+      }
     }
   }
 `
 const Navbar = () => {
-    return (
-        <MainNav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-            </ul>
-        </MainNav>
-    )
+  return (
+    <MainNav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/singers">Singers</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </MainNav>
+  )
 }
 
 export default Navbar

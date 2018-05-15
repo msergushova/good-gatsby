@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
-import logo from './../images/logo.svg'
-
+// import Img from 'gatsby-image'
+// import logo from './../images/logo.svg'
 
 const HeaderWrapper = styled.div`
-    background: green;
-    margin-bottom: 1.45rem;
-    padding: 2rem;
-  `
+  background: green;
+  margin-bottom: 1.45rem;
+  padding: 2rem;
+`
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -34,18 +33,6 @@ const Header = ({ data }) => (
         </Link>
       </h1>
     </HeaderContainer>
-    <img src={logo} alt="logo" />
-    <Img
-      style={{
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        width: '100%',
-        height: '100%',
-        opacity: 0.3,
-      }}
-      sizes={data.background.sizes}
-    />
   </HeaderWrapper>
 )
 
